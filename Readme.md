@@ -36,7 +36,8 @@ Connect via ssh as root to your venus os. If you don't have root access jet, see
 Important: You might need to reinstall these dependencies after a venus os update to get the plugin running again as the update seems to overwride everything outside the /data dir)
 
 1. install pip (python package manager): run `opkg update` and `opkg install python3-pip`
-2. install pycryptodomex `pip3 install pycryptodomex`
+2. If you ran into python error ModuleNotFound Tomllib install it separat: `opkg install python3-tomllib` an start from step 1 again.
+3. install pycryptodomex `pip3 install pycryptodomex`
 
 ### Install plugin:
 
