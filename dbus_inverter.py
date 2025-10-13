@@ -38,6 +38,8 @@ class DbusInverter:
         self.dbusservice.add_path('/Connected', 1, writeable=True)
         self.dbusservice.add_path('/ErrorCode', '(0) No Error')
         self.dbusservice.add_path('/Position', position)
+        # Name für GUI/GUIMods - Inverter Name
+        self.dbusservice.add_path('/CustomName', product_name)
 
         _kwh = lambda p, v: (str(v) + 'KWh')
         _a = lambda p, v: (str(v) + 'A')
