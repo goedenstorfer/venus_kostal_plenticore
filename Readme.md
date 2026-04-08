@@ -3,6 +3,14 @@
 This plugin obtains the current production from an kostal plenticore (or similar) inverter and displays it in venus os.
 The data is used to calculated the internal consumption, etc. and is also included in the VRM graphs.
 
+# Install dependencies after venus OS update (only 1-3 are necessery):
+  Important: You might need to reinstall these dependencies after a venus os update to get the plugin running again as the update seems to overwride everything outside the /data dir)
+
+  1. install pip (python package manager): run `opkg update` and `opkg install python3-pip`
+  2. If you ran into python error ModuleNotFound Tomllib install it separat: `opkg install python3-tomllib` an start from step 1 again.
+  3. install pycryptodomex `pip3 install pycryptodomex`
+
+
 ## Kompatibility
 
 This plugin should work with all PIKO IQ and PLENTICORE PLUS inverters. Go to `http://your-inverters-ip/api/v1/info/version`, if you get a response like this:   
